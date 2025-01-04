@@ -1,0 +1,155 @@
+/* General footer styling */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer hr {
+  border: 1px solid #555;
+  margin: 20px 0;
+}
+
+/* Copyright section styling */
+.footer-copyright {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Footer content container */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the left section of the footer */
+.footer-content-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-content-left img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-content-left p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  opacity: 0.8;
+}
+
+/* Styling for the center section of the footer */
+.footer-content-centre {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;  /* Ensures text is aligned to the left in the center section */
+}
+
+.footer-content-centre h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-content-centre ul {
+  display: block;  /* Ensure <ul> behaves as a block element */
+  list-style-type: disc;  /* Make sure it uses default bullet points */
+  padding-left: 20px;  /* Add space on the left for bullet points */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-content-centre li {
+  margin: 8px 0;
+  color: #bbb;
+  font-size: 14px;
+  cursor: pointer;
+  display: list-item;  /* Make sure each list item is displayed as a block element */
+}
+
+.footer-content-centre li:hover {
+  color: #fff;
+}
+
+/* Styling for the right section of the footer */
+.footer-content-right {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;  /* Ensures text is aligned to the left in the right section */
+}
+
+.footer-content-right h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-content-right ul {
+  display: block;  /* Ensure <ul> behaves as a block element */
+  list-style-type: disc;  /* Make sure it uses default bullet points */
+  padding-left: 20px;  /* Add space on the left for bullet points */
+  margin: 0; /* Remove default margin */
+}
+
+.footer-content-right li {
+  margin: 8px 0;
+  color: #bbb;
+  font-size: 14px;
+  cursor: pointer;
+  display: list-item;  /* Make sure each list item is displayed as a block element */
+}
+
+.footer-content-right li:hover {
+  color: #fff;
+}
+
+/* Ensure that the <ul> elements stay vertically aligned */
+.footer-content-centre,
+.footer-content-right {
+  display: block;  /* Make sure each section of the footer behaves as a block element */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-left,
+  .footer-content-centre,
+  .footer-content-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  .footer-content-left img {
+    width: 100px;
+  }
+}

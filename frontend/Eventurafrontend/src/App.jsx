@@ -1,3 +1,4 @@
+import Footer from "./footer/Footer";
 import Navbar from "./navbar/Navbar";
 import { useEffect, useState } from "react";
 
@@ -14,6 +15,7 @@ function App() {
       <div className={`container ${theme}`}>
         <Navbar theme={theme} settheme={settheme} />
       </div>
+      <Footer/>
     </>
   );
 }
