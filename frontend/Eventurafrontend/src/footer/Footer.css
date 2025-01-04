@@ -1,12 +1,18 @@
 /* General footer styling */
+* {
+  font-family: sans-serif !important;
+}
 .footer {
-  background-color: #000000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
   text-align: center;
 }
-
+.dark .footer {
+  color: #fff;
+  background-color: #000;
+}
 .footer hr {
   border: 1px solid #555;
   margin: 20px 0;
@@ -15,7 +21,8 @@
 /* Copyright section styling */
 .footer-copyright {
   font-size: 14px;
-  color: #ccc;
+
+  justify-content: center;
 }
 
 /* Footer content container */
@@ -26,12 +33,16 @@
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 /* Styling for the left section of the footer */
 .footer-content-left {
   flex: 1;
   min-width: 250px;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .footer-content-left img {
@@ -41,17 +52,17 @@
 
 .footer-content-left p {
   font-size: 14px;
-  color: #bbb;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .footer-social-icons {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 15px;
 }
 
-.footer-social-icons img {
+.footer-social-icons svg {
   width: 30px;
   height: 30px;
   transition: all 0.3s ease;
@@ -64,29 +75,32 @@
 /* Styling for the center section of the footer */
 .footer-content-centre {
   flex: 1;
+  justify-content: center;
+  padding-top: 30px;
   min-width: 200px;
-  text-align: left;  /* Ensures text is aligned to the left in the center section */
+  text-align: center; /* Ensures text is aligned to the left in the center section */
 }
 
 .footer-content-centre h2 {
+  text-align: center;
+  text-decoration: underline;
   font-size: 18px;
   margin-bottom: 10px;
-  color: #fff;
 }
 
 .footer-content-centre ul {
-  display: block;  /* Ensure <ul> behaves as a block element */
-  list-style-type: disc;  /* Make sure it uses default bullet points */
-  padding-left: 20px;  /* Add space on the left for bullet points */
+  display: block; /* Ensure <ul> behaves as a block element */
+
+  padding-left: 20px; /* Add space on the left for bullet points */
   margin: 0; /* Remove default margin */
 }
 
 .footer-content-centre li {
   margin: 8px 0;
-  color: #bbb;
+
   font-size: 14px;
   cursor: pointer;
-  display: list-item;  /* Make sure each list item is displayed as a block element */
+  display: list-item; /* Make sure each list item is displayed as a block element */
 }
 
 .footer-content-centre li:hover {
@@ -95,30 +109,35 @@
 
 /* Styling for the right section of the footer */
 .footer-content-right {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
   flex: 1;
   min-width: 200px;
-  text-align: left;  /* Ensures text is aligned to the left in the right section */
+  text-align: left; /* Ensures text is aligned to the left in the right section */
 }
 
 .footer-content-right h2 {
+  text-decoration: underline;
   font-size: 18px;
   margin-bottom: 10px;
-  color: #fff;
+
+  text-align: center;
 }
 
 .footer-content-right ul {
-  display: block;  /* Ensure <ul> behaves as a block element */
-  list-style-type: disc;  /* Make sure it uses default bullet points */
-  padding-left: 20px;  /* Add space on the left for bullet points */
+  display: block; /* Ensure <ul> behaves as a block element */
+
+  padding-left: 20px; /* Add space on the left for bullet points */
   margin: 0; /* Remove default margin */
 }
 
 .footer-content-right li {
   margin: 8px 0;
-  color: #bbb;
+
   font-size: 14px;
   cursor: pointer;
-  display: list-item;  /* Make sure each list item is displayed as a block element */
+  display: list-item; /* Make sure each list item is displayed as a block element */
 }
 
 .footer-content-right li:hover {
@@ -128,7 +147,7 @@
 /* Ensure that the <ul> elements stay vertically aligned */
 .footer-content-centre,
 .footer-content-right {
-  display: block;  /* Make sure each section of the footer behaves as a block element */
+  display: block; /* Make sure each section of the footer behaves as a block element */
 }
 
 /* Responsive design */

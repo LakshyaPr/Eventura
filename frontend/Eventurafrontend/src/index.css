@@ -6,6 +6,8 @@
 }
 
 .container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   width: 100vw;
   min-height: 100vh;
   background: #ced8ff;

@@ -15,7 +15,9 @@ function App() {
       <div className={`container ${theme}`}>
         <Navbar theme={theme} settheme={settheme} />
       </div>
-      <Footer/>
+      <div className={`Footer-container ${theme}`}>
+        <Footer theme={theme} settheme={settheme} />
+      </div>
     </>
   );
 }
