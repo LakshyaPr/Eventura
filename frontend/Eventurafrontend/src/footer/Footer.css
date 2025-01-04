@@ -60,6 +60,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  cursor: pointer;
 }
 
 .footer-social-icons svg {
